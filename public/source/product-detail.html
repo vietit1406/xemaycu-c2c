@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Product Detail</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.png"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/themify/themify-icons.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/elegant-font/html-css/style.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body class="animsition">
+
+	<!-- Header -->
+	<header class="header1">
+		<!-- Header desktop -->
+		<div class="container-menu-header">
+			<div class="topbar">
+				<div class="topbar-social">
+					<a href="#" class="topbar-social-item fa fa-facebook"></a>
+					<a href="#" class="topbar-social-item fa fa-instagram"></a>
+					<a href="#" class="topbar-social-item fa fa-pinterest-p"></a>
+					<a href="#" class="topbar-social-item fa fa-snapchat-ghost"></a>
+					<a href="#" class="topbar-social-item fa fa-youtube-play"></a>
+				</div>
+			</div>
+
+			<div class="wrap_header">
+				<!-- Logo -->
+				<a href="index.html" class="logo">
+					<img src="images/icons/logo.png" alt="IMG-LOGO">
+				</a>
+
+				<!-- Menu -->
+				<div class="wrap_menu">
+					<nav class="menu">
+						<ul class="main_menu">
+							<li>
+								<a href="index.html">Trang chủ</a>
+							</li>
+
+							<li>
+								<a href="product.html">Sản phẩm</a>
+								<ul class="sub_menu">
+									<li><a href="">Honda</a></li>
+									<li><a href="">Yamaha</a></li>
+									<li><a href="">Suzuki</a></li>
+									<li><a href="">Harley Davidson</a></li>
+									<li><a href="">SYM</a></li>
+								</ul>
+							</li>
+							
+							<li >
+								<a href="">Phân khúc xe</a>
+								<ul class="sub_menu">
+									<li><a href="">Dưới 100 cc</a></li>
+									<li><a href="">100 - 175 cc</a></li>
+									<li><a href="">Trên 175 cc</a></li>
+								</ul>
+							</li>
+
+							<li>
+								<a href="">Loại xe</a>
+								<ul class="sub_menu">
+									<li><a href="">Xe số</a></li>
+									<li><a href="">Tay ga</a></li>
+									<li><a href="">Tay côn/Moto</a></li>
+								</ul>
+							</li>
+							<!--
+							<li>
+								<a href="cart.html">Features</a>
+							</li>
+
+							<li>
+								<a href="blog.html">Blog</a>
+							</li>
+
+							<li>
+								<a href="about.html">About</a>
+							</li>
+							-->
+							<li>
+								<a href="contact.html">Liên hệ</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+				<!-- Header Icon -->
+				<div class="header-icons">
+					<form action="action_page.php" class="m-r-40 p-r-5 p-l-5 search-product pos-relative bo4 of-hidden ">
+  									<input class="s-text7" type="text" placeholder="Tìm kiếm" name="search">
+  									<button type="submit"><i class="fs-12 fa fa-search"></i></button>
+					</form>
+
+					<!-- Account khi chưa đăng nhập -->
+					<div class="header-wrapicon2">
+						<img src="images/icons/icon-header-01.png" class="header-icon1 js-show-header-dropdown" alt="ICON">
+						<div class="header-cart header-dropdown">
+							<a href="signin.html" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
+										Đăng nhập
+							</a>
+							<p>Bạn chưa có tài khoản? <a href="signup.html" class="s-text20 hov2 p-l-5">
+								Đăng ký ngay</a>
+							</p>
+						</div>
+					</div>	
+					<!-- Account khi đã đăng nhập -->
+					<!--<
+					div class="header-wrapicon2">
+						<img src="images/icons/icon-header-01.png" class="header-icon1 js-show-header-dropdown" alt="ICON">
+						<div class="header-cart header-dropdown">
+							<ul class="header-cart-wrapitem">
+								<li class="t-center">
+									Chào Việt
+								</li>
+								<li class="linedivide2"></li>
+								<li class="t-center">
+									<i class="fa fa-user-circle" aria-hidden="true"></i>
+									<a href="#">Quản lý tài khoản</a>
+								</li>
+
+								<li class="t-center">
+									<i class="fa fa-shopping-bag" aria-hidden="true"></i>
+									<a href="#">Đơn hàng của tôi</a>
+								</li>
+								<li class="t-center">
+									<i class="fa fa-user-plus" aria-hidden="true"></i>
+									<a href="#">Quản lý bán hàng</a>
+								</li>
+							</ul>
+						</div>
+					</div>	
+					-->
+					<span class="linedivide1"></span>
+
+					<div class="header-wrapicon2">
+						<img src="images/icons/icon-header-02.png" class="header-icon1 js-show-header-dropdown" alt="ICON">
+						<span class="header-icons-noti">0</span>
+
+						<!-- Header cart noti -->
+						<div class="header-cart header-dropdown">
+							<ul class="header-cart-wrapitem">
+								<li class="header-cart-item">
+									<div class="header-cart-item-img">
+										<img src="images/item-cart-01.jpg" alt="IMG">
+									</div>
+
+									<div class="header-cart-item-txt">
+										<a href="#" class="header-cart-item-name">
+											White Shirt With Pleat Detail Back
+										</a>
+
+										<span class="header-cart-item-info">
+											1 x $19.00
+										</span>
+									</div>
+								</li>
+
+								<li class="header-cart-item">
+									<div class="header-cart-item-img">
+										<img src="images/item-cart-02.jpg" alt="IMG">
+									</div>
+
+									<div class="header-cart-item-txt">
+										<a href="#" class="header-cart-item-name">
+											Converse All Star Hi Black Canvas
+										</a>
+
+										<span class="header-cart-item-info">
+											1 x $39.00
+										</span>
+									</div>
+								</li>
+
+								<li class="header-cart-item">
+									<div class="header-cart-item-img">
+										<img src="images/item-cart-03.jpg" alt="IMG">
+									</div>
+
+									<div class="header-cart-item-txt">
+										<a href="#" class="header-cart-item-name">
+											Nixon Porter Leather Watch In Tan
+										</a>
+
+										<span class="header-cart-item-info">
+											1 x $17.00
+										</span>
+									</div>
+								</li>
+							</ul>
+
+							<div class="header-cart-total">
+								Total: $75.00
+							</div>
+
+							<div class="header-cart-buttons">
+								<div class="header-cart-wrapbtn">
+									<!-- Button -->
+									<a href="cart.html" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
+										Xem giỏ hàng
+									</a>
+								</div>
+
+								<!--
+								<div class="header-cart-wrapbtn">
+									Button
+									<a href="#" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
+										Check Out
+									</a>
+								</div>
+								-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Header Mobile -->
+		<div class="wrap_header_mobile">
+			<!-- Logo moblie -->
+			<a href="index.html" class="logo-mobile">
+				<img src="images/icons/logo.png" alt="IMG-LOGO">
+			</a>
+
+			<!-- Button show menu -->
+			<div class="btn-show-menu">
+				<!-- Header Icon mobile -->
+				<div class="header-icons-mobile">
+					<a href="#" class="header-wrapicon1 dis-block">
+						<img src="images/icons/icon-header-01.png" class="header-icon1" alt="ICON">
+					</a>
+
+					<span class="linedivide2"></span>
+
+					<div class="header-wrapicon2">
+						<img src="images/icons/icon-header-02.png" class="header-icon1 js-show-header-dropdown" alt="ICON">
+						<span class="header-icons-noti">0</span>
+
+						<!-- Header cart noti -->
+						<div class="header-cart header-dropdown">
+							<ul class="header-cart-wrapitem">
+								<li class="header-cart-item">
+									<div class="header-cart-item-img">
+										<img src="images/item-cart-01.jpg" alt="IMG">
+									</div>
+
+									<div class="header-cart-item-txt">
+										<a href="#" class="header-cart-item-name">
+											White Shirt With Pleat Detail Back
+										</a>
+
+										<span class="header-cart-item-info">
+											1 x $19.00
+										</span>
+									</div>
+								</li>
+
+								<li class="header-cart-item">
+									<div class="header-cart-item-img">
+										<img src="images/item-cart-02.jpg" alt="IMG">
+									</div>
+
+									<div class="header-cart-item-txt">
+										<a href="#" class="header-cart-item-name">
+											Converse All Star Hi Black Canvas
+										</a>
+
+										<span class="header-cart-item-info">
+											1 x $39.00
+										</span>
+									</div>
+								</li>
+
+								<li class="header-cart-item">
+									<div class="header-cart-item-img">
+										<img src="images/item-cart-03.jpg" alt="IMG">
+									</div>
+
+									<div class="header-cart-item-txt">
+										<a href="#" class="header-cart-item-name">
+											Nixon Porter Leather Watch In Tan
+										</a>
+
+										<span class="header-cart-item-info">
+											1 x $17.00
+										</span>
+									</div>
+								</li>
+							</ul>
+
+							<div class="header-cart-total">
+								Total: $75.00
+							</div>
+
+							<div class="header-cart-buttons">
+								<div class="header-cart-wrapbtn">
+									<!-- Button -->
+									<a href="cart.html" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
+										View Cart
+									</a>
+								</div>
+
+								<div class="header-cart-wrapbtn">
+									<!-- Button -->
+									<a href="#" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
+										Check Out
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="btn-show-menu-mobile hamburger hamburger--squeeze">
+					<span class="hamburger-box">
+						<span class="hamburger-inner"></span>
+					</span>
+				</div>
+			</div>
+		</div>
+
+		<!-- Menu Mobile -->
+		<div class="wrap-side-menu" >
+			<nav class="side-menu">
+				<ul class="main-menu">
+					<li class="item-topbar-mobile p-l-20 p-t-8 p-b-8">
+						<span class="topbar-child1">
+							Free shipping for standard order over $100
+						</span>
+					</li>
+
+					<li class="item-topbar-mobile p-l-20 p-t-8 p-b-8">
+						<div class="topbar-child2-mobile">
+							<span class="topbar-email">
+								fashe@example.com
+							</span>
+
+							<div class="topbar-language rs1-select2">
+								<select class="selection-1" name="time">
+									<option>USD</option>
+									<option>EUR</option>
+								</select>
+							</div>
+						</div>
+					</li>
+
+					<li class="item-topbar-mobile p-l-10">
+						<div class="topbar-social-mobile">
+							<a href="#" class="topbar-social-item fa fa-facebook"></a>
+							<a href="#" class="topbar-social-item fa fa-instagram"></a>
+							<a href="#" class="topbar-social-item fa fa-pinterest-p"></a>
+							<a href="#" class="topbar-social-item fa fa-snapchat-ghost"></a>
+							<a href="#" class="topbar-social-item fa fa-youtube-play"></a>
+						</div>
+					</li>
+
+					<li class="item-menu-mobile">
+						<a href="index.html">Home</a>
+						<ul class="sub-menu">
+							<li><a href="index.html">Homepage V1</a></li>
+							<li><a href="home-02.html">Homepage V2</a></li>
+							<li><a href="home-03.html">Homepage V3</a></li>
+						</ul>
+						<i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
+					</li>
+
+					<li class="item-menu-mobile">
+						<a href="product.html">Shop</a>
+					</li>
+
+					<li class="item-menu-mobile">
+						<a href="product.html">Sale</a>
+					</li>
+
+					<li class="item-menu-mobile">
+						<a href="cart.html">Features</a>
+					</li>
+
+					<li class="item-menu-mobile">
+						<a href="blog.html">Blog</a>
+					</li>
+
+					<li class="item-menu-mobile">
+						<a href="about.html">About</a>
+					</li>
+
+					<li class="item-menu-mobile">
+						<a href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<!-- breadcrumb -->
+	<div class="bread-crumb bgwhite flex-w p-l-52 p-r-15 p-t-30 p-l-15-sm">
+		<a href="index.html" class="s-text16">
+			Home
+			<i class="fa fa-angle-right m-l-8 m-r-9" aria-hidden="true"></i>
+		</a>
+
+		<a href="product.html" class="s-text16">
+			Women
+			<i class="fa fa-angle-right m-l-8 m-r-9" aria-hidden="true"></i>
+		</a>
+
+		<a href="#" class="s-text16">
+			T-Shirt
+			<i class="fa fa-angle-right m-l-8 m-r-9" aria-hidden="true"></i>
+		</a>
+
+		<span class="s-text17">
+			Boxy T-Shirt with Roll Sleeve Detail
+		</span>
+	</div>
+
+	<!-- Product Detail -->
+	<div class="container bgwhite p-t-35 p-b-80">
+		<div class="flex-w flex-sb">
+			<div class="w-size13 p-t-30 respon5">
+				<div class="wrap-slick3 flex-sb flex-w">
+					<div class="wrap-slick3-dots"></div>
+
+					<div class="slick3">
+						<div class="item-slick3" data-thumb="images/thumb-item-01.jpg">
+							<div class="wrap-pic-w">
+								<img src="images/product-detail-01.jpg" alt="IMG-PRODUCT">
+							</div>
+						</div>
+
+						<div class="item-slick3" data-thumb="images/thumb-item-02.jpg">
+							<div class="wrap-pic-w">
+								<img src="images/product-detail-02.jpg" alt="IMG-PRODUCT">
+							</div>
+						</div>
+
+						<div class="item-slick3" data-thumb="images/thumb-item-03.jpg">
+							<div class="wrap-pic-w">
+								<img src="images/product-detail-03.jpg" alt="IMG-PRODUCT">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="w-size14 p-t-30 respon5">
+				<h4 class="product-detail-name m-text16 p-b-13">
+					Exciter 150 RC
+				</h4>
+
+				<span class="m-text17">
+					40.000.000 VNĐ
+				</span>
+
+				<p class="s-text8 p-t-10">
+					Exciter 150 Rc Trắng đỏ 11/2018 odo 3980 km
+				</p>
+
+				<!--  -->
+				<div class="p-t-33 p-b-60">								
+					<!-- Button -->
+						<button class="flex-c-m sizefull bg9 bo-rad-23 hov1 s-text1 trans-0-4" style="height: 40px">
+									<i class="fa fa-phone m-r-20" aria-hidden="true"></i> Liên lạc với người bán
+						</button>
+				</div>
+				<!--  -->
+				<div class="wrap-dropdown-content bo6 p-t-15 p-b-14 active-dropdown-content">
+					<h5 class="js-toggle-dropdown-content flex-sb-m cs-pointer m-text19 color0-hov trans-0-4">
+						Mô tả
+						<i class="down-mark fs-12 color1 fa fa-minus dis-none" aria-hidden="true"></i>
+						<i class="up-mark fs-12 color1 fa fa-plus" aria-hidden="true"></i>
+					</h5>
+
+					<div class="dropdown-content dis-none p-t-15 p-b-23">
+						<pre class="s-text8">
+✌️Xe nhà đi kỹ còn đẹp 98% dàn áo mới tháo keo leng keng
+👌Xe còn đủ chìa khoá + 2 kiếng hậu
+👉Xe Fi phun xăng điện tử nên cực kỳ tiết kiệm xăng
+👍Xe máy móc zin chưa bung, chạy cực kỳ ngọt, máy móc êm ru
+🤝Xe Biển số Thành Phố chính chủ sang tên 1 nốt nhạc.
+						</pre>
+					</div>
+				</div>
+
+				<div class="wrap-dropdown-content bo7 p-t-15 p-b-14">
+					<h5 class="js-toggle-dropdown-content flex-sb-m cs-pointer m-text19 color0-hov trans-0-4">
+						Thông tin thêm
+						<i class="down-mark fs-12 color1 fa fa-minus dis-none" aria-hidden="true"></i>
+						<i class="up-mark fs-12 color1 fa fa-plus" aria-hidden="true"></i>
+					</h5>
+
+					<div class="dropdown-content dis-none p-t-15 p-b-23">
+						<div class="d-flex">
+							<div class="p-2" style="flex:1">
+								<i class="fa fa-bookmark-o" aria-hidden="true"></i>
+								Hãng xe: Yamaha
+							</div>
+							<div class="p-2" style="flex:1">
+								<i class="fa fa-tag" aria-hidden="true"></i>
+								Dòng xe: Exciter
+							</div>
+						</div>
+						<div class="d-flex">
+							<div class="p-2" style="flex:1">
+								<i class="fa fa-calendar" aria-hidden="true"></i>
+								Năm đăng ký: 2019
+							</div>
+							<div class="p-2" style="flex:1">
+								<i class="fa fa-tachometer" aria-hidden="true"></i>
+								Số Km đã đi: 0
+							</div>
+						</div>
+						<div class="d-flex">
+							<div class="p-2" style="flex:1">
+								<i class="fa fa-id-card-o" aria-hidden="true"></i>
+								Tình trạng: Mới
+							</div>
+							<div class="p-2" style="flex:1">
+								<i class="fa fa-motorcycle" aria-hidden="true"></i>
+								Loại xe: Xe Số
+							</div>
+						</div>
+						<div class="d-flex">
+							<div class="p-2">
+							<i class="fa fa-cogs" aria-hidden="true"></i>
+								Dung tích xe: 100-175 cc
+							</div>
+						</div>
+						<br/>
+						<i class="fa fa-map-marker" aria-hidden="true"></i>
+						<span class="m-text12">
+							Khu vực:
+						</span>
+						<span>Tp. Hồ Chí Minh</span>
+					</div>
+				</div>
+
+				<div class="wrap-dropdown-content bo7 p-t-15 p-b-14">
+					<h5 class="js-toggle-dropdown-content flex-sb-m cs-pointer m-text19 color0-hov trans-0-4">
+						Đánh giá
+						<i class="down-mark fs-12 color1 fa fa-minus dis-none" aria-hidden="true"></i>
+						<i class="up-mark fs-12 color1 fa fa-plus" aria-hidden="true"></i>
+					</h5>
+
+					<div class="dropdown-content dis-none p-t-15 p-b-23 t-center">
+	                   	<span class="fs-25">Đánh giá người bán</span>
+                        <span class="fa fa-star checked fs-25"></span>
+                        <span class="fa fa-star checked fs-25"></span>
+                        <span class="fa fa-star checked fs-25"></span>
+                        <span class="fa fa-star checked fs-25"></span>
+                        <span class="fa fa-star fs-25"></span>
+                        <p>4.1 average based on 254 reviews.</p>
+                        <hr style="border:3px solid #f1f1f1">
+
+                        <div class="row">
+                           	<div class="side">
+                             	<div>5 star</div>
+                            </div>
+                           	<div class="middle">
+                            	<div class="bar-container">
+                                	<div class="bar-5"></div>
+                            	</div>
+                    		</div>
+                            <div class="side right">
+                            	<div>150</div>
+                            </div>
+                            <div class="side">
+                            	<div>4 star</div>
+                            </div>
+                            <div class="middle">
+                            	<div class="bar-container">
+                                	<div class="bar-4"></div>
+                                </div>
+                            </div>
+                            <div class="side right">
+                            	<div>63</div>
+                            </div>
+                            <div class="side">
+                            	<div>3 star</div>
+                            </div>
+                            <div class="middle">
+                            	<div class="bar-container">
+                                	<div class="bar-3"></div>
+                            	</div>
+                       		</div>
+                            <div class="side right">
+                            	<div>15</div>
+                            </div>
+                            <div class="side">
+                            	<div>2 star</div>
+                            </div>
+                            <div class="middle">
+                            	<div class="bar-container">
+                                	<div class="bar-2"></div>
+                                </div>
+                            </div>
+                            <div class="side right">
+                            	<div>6</div>
+                            </div>
+                            <div class="side">
+                            	<div>1 star</div>
+                            </div>
+                            <div class="middle">
+                            	<div class="bar-container">
+                                	<div class="bar-1"></div>
+                                </div>
+                            </div>
+                            <div class="side right">
+                            	<div>20</div>
+                            </div>
+                        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Comment -->
+	<!--
+	<h2 class="m-text5 t-center">Nhận xét</h2>
+	<div class="Comment m-l-150">
+		<span>Đánh giá của bạn về người bán: </span>
+		<span class="product-review-stars">
+        	<input type="radio" id="star5" name="rating" value="5" class="visuallyhidden" />
+        	<label for="star5" title="Rocks!">★</label>
+        	<input type="radio" id="star4" name="rating" value="4" class="visuallyhidden" />
+        	<label for="star4" title="Pretty good">★</label>
+        	<input type="radio" id="star3" name="rating" value="3" class="visuallyhidden" />
+        	<label for="star3" title="Meh">★</label>
+        	<input type="radio" id="star2" name="rating" value="2" class="visuallyhidden" />
+        	<label for="star2" title="Kinda bad">★</label>
+    	    <input type="radio" id="star1" name="rating" value="1" class="visuallyhidden" />
+        	<label for="star1" title="Sucks big time">★</label>
+		</span> 
+		<div>Viết nhận xét của bạn vào bên dưới: </div>
+		<textarea name="comment" placeholder="Nhận xét của bạn về người bán" rows="6" cols="80"></textarea>
+		<a href="" class="flex-c-m bg1 bo-rad-20 hov1 s-text1 trans-0-4 w-size19 m-t-10" style="height: 40px">
+			Gửi nhận xét
+		</a>
+		<hr>
+	</div>
+	-->
+	<!-- Advertisement -->
+	<section class="bg-title-page p-t-50 p-b-40 flex-col-c-m" style="background-image: url(images/heading-pages-02.jpg);">
+		<h2 class="l-text2 t-center">
+			Quảng cáo
+		</h2>
+		<p class="m-text13 t-center">
+			Quảng cáo
+		</p>
+	</section>
+	
+
+	<!-- Relate Product -->
+	<section class="relateproduct bgwhite p-t-45 p-b-138">
+		<div class="container">
+			<div class="sec-title p-b-60">
+				<h3 class="m-text5 t-center">
+					Sản phẩm liên quan
+				</h3>
+			</div>
+
+			<!-- Slide2 -->
+			<div class="wrap-slick2">
+				<div class="slick2">
+
+					<div class="item-slick2 p-l-15 p-r-15">
+						<!-- Block2 -->
+						<div class="block2">
+							<div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew">
+								<img src="images/item-02.jpg" alt="IMG-PRODUCT">
+
+								<div class="block2-overlay trans-0-4">
+									<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
+										<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
+										<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
+									</a>
+
+									<div class="block2-btn-addcart w-size1 trans-0-4">
+										<!-- Button -->
+										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+											Add to Cart
+										</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="block2-txt p-t-20">
+								<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
+									Herschel supply co 25l
+								</a>
+
+								<span class="block2-price m-text6 p-r-5">
+									$75.00
+								</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="item-slick2 p-l-15 p-r-15">
+						<!-- Block2 -->
+						<div class="block2">
+							<div class="block2-img wrap-pic-w of-hidden pos-relative">
+								<img src="images/item-03.jpg" alt="IMG-PRODUCT">
+
+								<div class="block2-overlay trans-0-4">
+									<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
+										<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
+										<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
+									</a>
+
+									<div class="block2-btn-addcart w-size1 trans-0-4">
+										<!-- Button -->
+										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+											Add to Cart
+										</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="block2-txt p-t-20">
+								<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
+									Denim jacket blue
+								</a>
+
+								<span class="block2-price m-text6 p-r-5">
+									$92.50
+								</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="item-slick2 p-l-15 p-r-15">
+						<!-- Block2 -->
+						<div class="block2">
+							<div class="block2-img wrap-pic-w of-hidden pos-relative">
+								<img src="images/item-05.jpg" alt="IMG-PRODUCT">
+
+								<div class="block2-overlay trans-0-4">
+									<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
+										<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
+										<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
+									</a>
+
+									<div class="block2-btn-addcart w-size1 trans-0-4">
+										<!-- Button -->
+										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+											Add to Cart
+										</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="block2-txt p-t-20">
+								<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
+									Coach slim easton black
+								</a>
+
+								<span class="block2-price m-text6 p-r-5">
+									$165.90
+								</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="item-slick2 p-l-15 p-r-15">
+						<!-- Block2 -->
+						<div class="block2">
+							<div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelsale">
+								<img src="images/item-07.jpg" alt="IMG-PRODUCT">
+
+								<div class="block2-overlay trans-0-4">
+									<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
+										<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
+										<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
+									</a>
+
+									<div class="block2-btn-addcart w-size1 trans-0-4">
+										<!-- Button -->
+										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+											Add to Cart
+										</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="block2-txt p-t-20">
+								<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
+									Frayed denim shorts
+								</a>
+
+								<span class="block2-oldprice m-text7 p-r-5">
+									$29.50
+								</span>
+
+								<span class="block2-newprice m-text8 p-r-5">
+									$15.90
+								</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="item-slick2 p-l-15 p-r-15">
+						<!-- Block2 -->
+						<div class="block2">
+							<div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew">
+								<img src="images/item-02.jpg" alt="IMG-PRODUCT">
+
+								<div class="block2-overlay trans-0-4">
+									<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
+										<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
+										<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
+									</a>
+
+									<div class="block2-btn-addcart w-size1 trans-0-4">
+										<!-- Button -->
+										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+											Add to Cart
+										</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="block2-txt p-t-20">
+								<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
+									Herschel supply co 25l
+								</a>
+
+								<span class="block2-price m-text6 p-r-5">
+									$75.00
+								</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="item-slick2 p-l-15 p-r-15">
+						<!-- Block2 -->
+						<div class="block2">
+							<div class="block2-img wrap-pic-w of-hidden pos-relative">
+								<img src="images/item-03.jpg" alt="IMG-PRODUCT">
+
+								<div class="block2-overlay trans-0-4">
+									<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
+										<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
+										<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
+									</a>
+
+									<div class="block2-btn-addcart w-size1 trans-0-4">
+										<!-- Button -->
+										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+											Add to Cart
+										</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="block2-txt p-t-20">
+								<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
+									Denim jacket blue
+								</a>
+
+								<span class="block2-price m-text6 p-r-5">
+									$92.50
+								</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="item-slick2 p-l-15 p-r-15">
+						<!-- Block2 -->
+						<div class="block2">
+							<div class="block2-img wrap-pic-w of-hidden pos-relative">
+								<img src="images/item-05.jpg" alt="IMG-PRODUCT">
+
+								<div class="block2-overlay trans-0-4">
+									<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
+										<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
+										<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
+									</a>
+
+									<div class="block2-btn-addcart w-size1 trans-0-4">
+										<!-- Button -->
+										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+											Add to Cart
+										</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="block2-txt p-t-20">
+								<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
+									Coach slim easton black
+								</a>
+
+								<span class="block2-price m-text6 p-r-5">
+									$165.90
+								</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="item-slick2 p-l-15 p-r-15">
+						<!-- Block2 -->
+						<div class="block2">
+							<div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelsale">
+								<img src="images/item-07.jpg" alt="IMG-PRODUCT">
+
+								<div class="block2-overlay trans-0-4">
+									<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
+										<i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
+										<i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
+									</a>
+
+									<div class="block2-btn-addcart w-size1 trans-0-4">
+										<!-- Button -->
+										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+											Add to Cart
+										</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="block2-txt p-t-20">
+								<a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
+									Frayed denim shorts
+								</a>
+
+								<span class="block2-oldprice m-text7 p-r-5">
+									$29.50
+								</span>
+
+								<span class="block2-newprice m-text8 p-r-5">
+									$15.90
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+
+	<!-- Footer -->
+	<footer class="bg6 p-t-45 p-b-43 p-l-65 p-r-65 p-lr-0-xl1">
+		<div class="flex-w p-b-90" style="justify-content: center">
+			<div class="w-size6 p-t-30 p-l-15 p-r-15 respon6">
+				<h4 class="s-text12 p-b-30">
+					Thông tin liên hệ
+				</h4>
+
+				<div>
+					<p class="s-text7 w-size26">
+						Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call us on (+1) 96 716 6879
+					</p>
+
+					<div class="flex-m p-t-30">
+						<a href="#" class="fs-18 color1 p-r-20 fa fa-facebook"></a>
+						<a href="#" class="fs-18 color1 p-r-20 fa fa-instagram"></a>
+						<a href="#" class="fs-18 color1 p-r-20 fa fa-pinterest-p"></a>
+						<a href="#" class="fs-18 color1 p-r-20 fa fa-snapchat-ghost"></a>
+						<a href="#" class="fs-18 color1 p-r-20 fa fa-youtube-play"></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="w-size7 p-t-30 p-l-15 p-r-15 respon7">
+				<h4 class="s-text12 p-b-30">
+					Hãng xe
+				</h4>
+
+				<ul>
+					<li class="p-b-9">
+						<a href="#" class="s-text7">
+							Honda
+						</a>
+					</li>
+
+					<li class="p-b-9">
+						<a href="#" class="s-text7">
+							Yamaha
+						</a>
+					</li>
+
+					<li class="p-b-9">
+						<a href="#" class="s-text7">
+							Suzuki
+						</a>
+					</li>
+
+					<li class="p-b-9">
+						<a href="#" class="s-text7">
+							SYM
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="w-size7 p-t-30 p-l-15 p-r-15 respon7">
+				<h4 class="s-text12 p-b-30">
+					Links
+				</h4>
+
+				<ul>
+					<li class="p-b-9">
+						<a href="#" class="s-text7">
+							Tìm kiếm
+						</a>
+					</li>
+
+					<!--
+					<li class="p-b-9">
+						<a href="#" class="s-text7">
+							About Us
+						</a>
+					</li>
+					-->
+
+					<li class="p-b-9">
+						<a href="#" class="s-text7">
+							Liên hệ
+						</a>
+					</li>
+
+					<!--
+					<li class="p-b-9">
+						<a href="#" class="s-text7">
+							Returns
+						</a>
+					</li>-->
+				</ul>
+			</div>
+
+			<!--
+			<div class="w-size7 p-t-30 p-l-15 p-r-15 respon7">
+				<h4 class="s-text12 p-b-30">
+					Help
+				</h4>
+
+				<ul>
+					<li class="p-b-9">
+						<a href="#" class="s-text7">
+							Track Order
+						</a>
+					</li>
+
+					<li class="p-b-9">
+						<a href="#" class="s-text7">
+							Returns
+						</a>
+					</li>
+
+					<li class="p-b-9">
+						<a href="#" class="s-text7">
+							Shipping
+						</a>
+					</li>
+
+					<li class="p-b-9">
+						<a href="#" class="s-text7">
+							FAQs
+						</a>
+					</li>
+				</ul>
+			</div>
+
+
+			<div class="w-size8 p-t-30 p-l-15 p-r-15 respon6">
+				<h4 class="s-text12 p-b-30">
+					Newsletter
+				</h4>
+
+				<form>
+					<div class="effect1 w-size9">
+						<input class="s-text7 bg6 w-full p-b-5" type="text" name="email" placeholder="email@example.com">
+						<span class="effect1-line"></span>
+					</div>
+
+					<div class="w-size2 p-t-20">
+						Button
+						<button class="flex-c-m size2 bg4 bo-rad-23 hov1 m-text3 trans-0-4">
+							Subscribe
+						</button>
+					</div>
+				
+				</form>
+			</div>
+			-->
+		</div>
+
+		<div class="t-center p-l-15 p-r-15">
+			<a href="#">
+				<img class="h-size2" src="images/icons/paypal.png" alt="IMG-PAYPAL">
+			</a>
+
+		</div>
+	</footer>
+
+
+
+	<!-- Back to top -->
+	<div class="btn-back-to-top bg0-hov" id="myBtn">
+		<span class="symbol-btn-back-to-top">
+			<i class="fa fa-angle-double-up" aria-hidden="true"></i>
+		</span>
+	</div>
+
+	<!-- Container Selection -->
+	<div id="dropDownSelect1"></div>
+	<div id="dropDownSelect2"></div>
+
+
+
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/bootstrap/js/popper.js"></script>
+	<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/select2/select2.min.js"></script>
+	<script type="text/javascript">
+		$(".selection-1").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect1')
+		});
+
+		$(".selection-2").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect2')
+		});
+	</script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+	<script type="text/javascript" src="js/slick-custom.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="vendor/sweetalert/sweetalert.min.js"></script>
+	<script type="text/javascript">
+		$('.block2-btn-addcart').each(function(){
+			var nameProduct = $(this).parent().parent().parent().find('.block2-name').html();
+			$(this).on('click', function(){
+				swal(nameProduct, "is added to cart !", "success");
+			});
+		});
+
+		$('.block2-btn-addwishlist').each(function(){
+			var nameProduct = $(this).parent().parent().parent().find('.block2-name').html();
+			$(this).on('click', function(){
+				swal(nameProduct, "is added to wishlist !", "success");
+			});
+		});
+
+		$('.btn-addcart-product-detail').each(function(){
+			var nameProduct = $('.product-detail-name').html();
+			$(this).on('click', function(){
+				swal(nameProduct, "is added to wishlist !", "success");
+			});
+		});
+	</script>
+
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+</body>
+</html>
